@@ -2,6 +2,9 @@
 
 La guía completa del práctico está en [ACTIVIDAD.md](ACTIVIDAD.md).
 
+La descripción de los comandos y archivos generados está en
+[DETALLE_ANALISIS.md](DETALLE_ANALISIS.md).
+
 ## Flujo del práctico
 
 ```text

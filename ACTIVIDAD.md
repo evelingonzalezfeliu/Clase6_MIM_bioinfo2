@@ -113,6 +113,9 @@ En esta parte seguiremos este flujo:
               Interpretación en RStudio
 ```
 
+Para revisar los comandos, parámetros, entradas y salidas de cada trabajo,
+consulte la [guía detallada de los análisis](DETALLE_ANALISIS.md).
+
 Ejecute los trabajos desde la carpeta principal del repositorio. Espere que
 termine cada trabajo antes de enviar el siguiente.
 
@@ -153,6 +156,12 @@ sbatch slurm/04_gwas.sbatch
 
 Al finalizar, los archivos necesarios para hacer los gráficos estarán en la
 carpeta `results/`. Los utilizaremos en la siguiente parte desde RStudio.
+
+### Alternativa si no puede ejecutar Slurm
+
+El repositorio incluye las tablas pequeñas necesarias para los gráficos. Si un
+estudiante no puede ejecutar los trabajos Slurm, puede pasar directamente a la
+Parte 3 y utilizar estos resultados preparados.
 
 ---
 

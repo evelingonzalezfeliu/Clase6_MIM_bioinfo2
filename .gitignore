@@ -35,3 +35,16 @@ logs/*
 .DS_Store
 
 !logs/.gitkeep
+
+# Archivos pequeños preparados para realizar la Parte 3 sin ejecutar Slurm
+!data/integrated_call_samples_v3.20130502.ALL.panel
+!results/pca.eigenvec
+!results/pca.eigenval
+!results/admixture_K3.fam
+!results/chr22_pruned.3.Q
+!results/qc.frq
+!results/qc.imiss
+!results/qc.lmiss
+!results/fenotipo.tsv
+!results/gwas_sin_pc.assoc.logistic
+!results/gwas_con_pc.assoc.logistic

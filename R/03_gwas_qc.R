@@ -2,8 +2,6 @@
 frecuencias <- read.table("results/qc.frq", header = TRUE)
 missing_snp <- read.table("results/qc.lmiss", header = TRUE)
 missing_muestra <- read.table("results/qc.imiss", header = TRUE)
-fam <- read.table("results/chr22_qc.fam")
-bim <- read.table("results/chr22_qc.bim")
 
 # Gráficos de QC
 par(mfrow = c(2, 2))
@@ -18,8 +16,8 @@ hist(missing_muestra$F_MISS, breaks = 30, col = "seagreen",
      main = "Missingness por muestra", xlab = "F_MISS")
 
 plot.new()
-text(0.5, 0.65, paste("Muestras después del QC:", nrow(fam)))
-text(0.5, 0.45, paste("Variantes después del QC:", nrow(bim)))
+text(0.5, 0.65, paste("Muestras después del QC:", nrow(missing_muestra)))
+text(0.5, 0.45, paste("Variantes después del QC:", nrow(frecuencias)))
 text(0.5, 0.25, "Datos del cromosoma 22")
 
 # Guardar los gráficos de QC
