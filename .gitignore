@@ -1,0 +1,37 @@
+# Contenedores y cachés
+*.sif
+containers/
+gwas-class-containers/
+.singularity/
+
+# Datos originales y formatos grandes
+data/*
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.bcf.csi
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+
+# Intermedios y resultados regenerables
+.work/
+results/*
+logs/*
+
+# Salidas comunes
+*.log
+*.nosex
+*.hh
+*.tmp
+*.out
+*.err
+*.Rhistory
+*.RData
+.DS_Store
+
+!logs/.gitkeep
