@@ -17,10 +17,11 @@ Todavía no usaremos `sbatch`.
 
 ## Paso 1. Entrar al repositorio
 
-Cambie `/RUTA/AL/REPOSITORIO` por la ruta donde clonó el repositorio:
+Desde la carpeta donde guardará el práctico, clone el repositorio:
 
 ```bash
-cd /RUTA/AL/REPOSITORIO/Clase6_MIM_bioinfo2
+git clone git@github.com:evelingonzalezfeliu/Clase6_MIM_bioinfo2.git
+cd Clase6_MIM_bioinfo2
 ```
 
 ## Paso 2. Descargar los tres contenedores
@@ -58,6 +59,15 @@ Los contenedores quedarán fuera del repositorio, en la carpeta
 Usaremos el cromosoma 22 de 1000 Genomes Project, fase 3, en GRCh37. Los
 archivos originales están disponibles en el
 [sitio de 1000 Genomes](https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/).
+
+Descargaremos cuatro archivos:
+
+- **VCF:** contiene los genotipos del cromosoma 22.
+- **Índice `.tbi`:** permite acceder rápidamente a regiones del VCF.
+- **Panel de muestras:** contiene la población, superpoblación y sexo de cada
+  individuo.
+- **Individuos relacionados:** identifica muestras con relaciones de
+  parentesco.
 
 Copie y pegue el bloque completo:
 

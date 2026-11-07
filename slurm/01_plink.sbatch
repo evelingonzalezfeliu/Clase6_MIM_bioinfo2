@@ -8,6 +8,8 @@
 #SBATCH --output=logs/01_plink_%j.out
 #SBATCH --error=logs/01_plink_%j.err
 
+set -euo pipefail
+
 # Rutas de entrada y salida
 PROYECTO="$SLURM_SUBMIT_DIR"
 VCF="$PROYECTO/data/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz"
@@ -29,7 +31,7 @@ singularity exec --bind "$PROYECTO:$PROYECTO" "$PLINK_SIF" \
   --keep "$PROYECTO/results/muestras.keep" \
   --snps-only just-acgt \
   --biallelic-only strict \
-  --set-missing-var-ids '@:#:$r:$a' \
+  --set-missing-var-ids '@:#:$1:$2' \
   --geno 0.02 \
   --mind 0.02 \
   --maf 0.05 \

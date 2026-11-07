@@ -8,6 +8,8 @@
 #SBATCH --output=logs/04_gwas_%j.out
 #SBATCH --error=logs/04_gwas_%j.err
 
+set -euo pipefail
+
 # Rutas y semilla de la simulación
 PROYECTO="$SLURM_SUBMIT_DIR"
 PLINK_SIF="$PROYECTO/../gwas-class-containers/plink_1.90b7.7--h18e278d_1.sif"

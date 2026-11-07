@@ -8,6 +8,8 @@
 #SBATCH --output=logs/03_admixture_%j.out
 #SBATCH --error=logs/03_admixture_%j.err
 
+set -euo pipefail
+
 # Rutas y número de componentes
 PROYECTO="$SLURM_SUBMIT_DIR"
 ADMIXTURE_SIF="$PROYECTO/../gwas-class-containers/admixture_1.3.0--0.sif"

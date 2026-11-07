@@ -8,6 +8,8 @@
 #SBATCH --output=logs/02_pca_%j.out
 #SBATCH --error=logs/02_pca_%j.err
 
+set -euo pipefail
+
 # Rutas de entrada y salida
 PROYECTO="$SLURM_SUBMIT_DIR"
 PLINK_SIF="$PROYECTO/../gwas-class-containers/plink_1.90b7.7--h18e278d_1.sif"
